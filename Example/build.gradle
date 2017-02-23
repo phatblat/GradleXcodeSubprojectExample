@@ -5,10 +5,7 @@
 
 buildscript {
     repositories {
-        maven {
-            url '../../repo'
-        }
-        // mavenLocal()
+        mavenLocal()
         maven { url('http://repository.openbakery.org/') }
         mavenCentral()
     }
