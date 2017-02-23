@@ -40,11 +40,11 @@
 		607FACE51AFB9204008FA782 /* GradleXcodeSubprojectExample_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradleXcodeSubprojectExample_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		63DA6634C8143FF6F2B6770E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		7C6F461EB1286D2B17A84212 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		63DA6634C8143FF6F2B6770E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7C6F461EB1286D2B17A84212 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7D759980BB7F554E937FAA64 /* Pods_GradleXcodeSubprojectExample_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GradleXcodeSubprojectExample_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		971B33EBC9247D11C7D0361D /* Pods-GradleXcodeSubprojectExample_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradleXcodeSubprojectExample_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GradleXcodeSubprojectExample_Tests/Pods-GradleXcodeSubprojectExample_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A02B9BD71EC36825F5FB47F9 /* GradleXcodeSubprojectExample.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GradleXcodeSubprojectExample.podspec; path = ../GradleXcodeSubprojectExample.podspec; sourceTree = "<group>"; };
+		A02B9BD71EC36825F5FB47F9 /* GradleXcodeSubprojectExample.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GradleXcodeSubprojectExample.podspec; path = ../GradleXcodeSubprojectExample.podspec; sourceTree = "<group>"; };
 		A8878C79D0886710350657AD /* Pods-GradleXcodeSubprojectExample_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradleXcodeSubprojectExample_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GradleXcodeSubprojectExample_Example/Pods-GradleXcodeSubprojectExample_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AD3BAFDDDE5B0E603514F9FC /* Pods-GradleXcodeSubprojectExample_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradleXcodeSubprojectExample_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GradleXcodeSubprojectExample_Example/Pods-GradleXcodeSubprojectExample_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -523,10 +523,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 311553EE19292BB4D3938089 /* Pods-GradleXcodeSubprojectExample_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -543,10 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 971B33EBC9247D11C7D0361D /* Pods-GradleXcodeSubprojectExample_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
