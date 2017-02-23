@@ -1,9 +1,10 @@
 # GradleXcodeSubprojectExample
 
-[![CI Status](http://img.shields.io/travis/git/GradleXcodeSubprojectExample.svg?style=flat)](https://travis-ci.org/git/GradleXcodeSubprojectExample)
-[![Version](https://img.shields.io/cocoapods/v/GradleXcodeSubprojectExample.svg?style=flat)](http://cocoapods.org/pods/GradleXcodeSubprojectExample)
-[![License](https://img.shields.io/cocoapods/l/GradleXcodeSubprojectExample.svg?style=flat)](http://cocoapods.org/pods/GradleXcodeSubprojectExample)
-[![Platform](https://img.shields.io/cocoapods/p/GradleXcodeSubprojectExample.svg?style=flat)](http://cocoapods.org/pods/GradleXcodeSubprojectExample)
+A Gradle multi-project build example showing an issue with gradle-xcodePlugin in the subproject.
+
+The root-level library (pod) and the Example (app) subfolder together make up a multi-project Gradle build.
+The Example app builds using the gradle-xcodePlugin. However, running `gradle build` from the root folder
+causes errors.
 
 ## Example
 
@@ -22,7 +23,7 @@ pod "GradleXcodeSubprojectExample"
 
 ## Author
 
-git, ben@octop.ad
+Ben Chatelain, ben@octop.ad
 
 ## License
 
