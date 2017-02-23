@@ -1,0 +1,33 @@
+//
+// build.gradle
+// GradleXcodeSubprojectExample/Example
+//
+
+buildscript {
+    repositories {
+        maven {
+            url '../../repo'
+        }
+        // mavenLocal()
+        maven { url('http://repository.openbakery.org/') }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.openbakery:xcode-plugin:+'
+    }
+}
+
+apply plugin: 'org.openbakery.xcode-plugin'
+
+xcodebuild {
+    version '8'
+    projectFile 'GradleXcodeSubprojectExample.xcodeproj'
+    scheme 'GradleXcodeSubprojectExample-Example'
+    target 'GradleXcodeSubprojectExample_Example'
+    configuration 'Debug'
+    destination {
+        platform = 'iOS Simulator'
+        name = 'iPhone 6s'
+        os = '10.0'
+    }
+}

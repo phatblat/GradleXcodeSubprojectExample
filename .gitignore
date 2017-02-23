@@ -28,3 +28,6 @@ Carthage/
 Pods/
 Podfile.lock
 
+# Gradle
+.gradle/
+
