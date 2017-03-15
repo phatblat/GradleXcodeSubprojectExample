@@ -9,6 +9,10 @@ because `settings.gradle` links them together.
 The Example app builds using gradle-xcodePlugin. However, running `gradle build` from the root folder
 causes errors.
 
+This issue is now fixed in openbakery/gradle-xcodePlugin#344
+Check out the [`fixed`](https://github.com/phatblat/GradleXcodeSubprojectExample/tree/fixed) branch 
+of this repo to test a fixed version of gradle-xcodePlugin
+
 ### Folder Structure
 
 ```
