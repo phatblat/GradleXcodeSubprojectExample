@@ -84,19 +84,10 @@ This does not need to be done to reproduce the gradle-xcodePlugin issue.
 - Xcode 8.2+
 - CocoaPods 1.1+
 
-## Installation
-
-GradleXcodeSubprojectExample is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "GradleXcodeSubprojectExample"
-```
-
 ## Author
 
 Ben Chatelain, ben@octop.ad
 
 ## License
 
-GradleXcodeSubprojectExample is available under the MIT license. See the LICENSE file for more info.
+GradleXcodeSubprojectExample is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
