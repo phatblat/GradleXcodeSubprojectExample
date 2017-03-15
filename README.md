@@ -4,8 +4,8 @@ A Gradle multi-project build example showing an issue with [gradle-xcodePlugin](
 in the subproject.
 
 This is a typical CocoaPods library project setup (created using `pod lib create` standard template)
-with a root-level library (pod) and the Example (app) subfolder. Together make up a multi-project Gradle build
-because settings.gradle links them together.
+with a root-level library (pod) and the Example (app) subfolder. They make up a multi-project Gradle build
+because `settings.gradle` links them together.
 The Example app builds using gradle-xcodePlugin. However, running `gradle build` from the root folder
 causes errors.
 
