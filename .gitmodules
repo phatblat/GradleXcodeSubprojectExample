@@ -1,0 +1,3 @@
+[submodule "gradle-xcodePlugin"]
+	path = gradle-xcodePlugin
+	url = git@github.com:phatblat/gradle-xcodePlugin.git
