@@ -1,1 +1,8 @@
 include 'Example'
+
+// Include local git submodule project in composite build
+includeBuild 'gradle-xcodePlugin', {
+    dependencySubstitution {
+        substitute module('org.openbakery:xcode-plugin') with project(':plugin')
+    }
+}
