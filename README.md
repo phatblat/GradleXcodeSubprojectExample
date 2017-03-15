@@ -31,6 +31,8 @@ The following issue was found in gradle-xcodePlugin version 0.14.5.
 
 1. Clone this repo
 1. `cd` into the top level folder
+1. Pull in submodule with fixed version of gradle-xcodePlugin
+  - `git submodule update --init --recursive`
 1. Run `gradle build`
 
 ### Expected Results
